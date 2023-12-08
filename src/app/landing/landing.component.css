@@ -1,3 +1,20 @@
+.navbar {
+    background-color: #1ABC9C;
+}
+
+.landing-header {
+    .main-head {
+        color: #1ABC9C;
+    }
+}
+
+.features-body {
+    .features-head {
+        /* text-align: center; */
+    }
+}
+
+
 .masterhead {
     padding: 12rem 0;
     background-color: #1ABC9C;

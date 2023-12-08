@@ -6,14 +6,14 @@
     <title>Landing component</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-danger">
+    <nav class="navbar navbar-expand-lg  fix-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Hospitality</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 col">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -31,39 +31,38 @@
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <!-- <li class="nav-item ms-auto">
+                <a class="nav-link " href="#">Registration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " routerLink="/login">Login</a>
               </li> -->
             </ul>
-            <!-- <div class="align-right"> -->
-                <ul>
-                   <a class="nav-link active" aria-current="page" href="#">Registration</a>
-                    <a class="nav-link active" aria-current="page" href="#">Login</a>
-            <!-- </div> --> 
-                </ul>
-                    
-            <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
+            <div class="d-flex col gap-4">
+                <a class="nav-link ms-auto" routerLink="/registration">Registration</a>
+                <a class="nav-link me-auto" aria-current="page" routerLink="/login">Login</a>
+            </div>
           </div>
         </div>
     </nav>
-    <header class="masterhead text-white text-center">
-        <div class="container d-flex align-items-center flex-column pt-6rem">
-            <!-- Masterhead Avatar Image-->
-            <img class="masterhead-avatar mb-5" src="../../assets/images/avatar.png" alt="...">
-            <!-- Masterhead Heading-->
-            <h1 class="masthead-heading text-uppercase fw-bold">Start Bootstrap</h1>
-            <!-- Icon Divider-->
-            <div class="custom-divider divider-light">
-                <div class="custom-divider-line"></div>
-                <img class="custom-divider-icon" src="../../assets/images/star-solid.svg" alt="star">
-                <div class="custom-divider-line"></div>
-            </div>
-            <!-- Masterhead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0 fw-semibold">Graphic Artist - Web Designer - Illustrator</p>
+    <header>
+      <div class="row container-fluid landing-header pt-5">
+        <div class="col mt-5 ms-5">
+          <h1 class="main-head text-capitalize">hospital management</h1>
+          <p class="sub-head mt-5">
+            Introducing our groundbreaking healthcare IT solution, 
+            a Web-Based Hospital Management System. This innovative platform streamlines operations, 
+            elevates patient care, and enhances overall efficiency for healthcare facilities. 
+            Experience the future of healthcare management with us.
+          </p>
         </div>
+        <div class="col mt-2">
+          <img class="head-img w-75 h-75 ms-5 me-2" src="../../assets/images/Doctors-img.png">
+        </div>
+      </div>
     </header>
+    <section class="features-body">
+      <h1 class="features-head text-center">Explore Our Service</h1>
+    </section>
 </body>
 </html>
