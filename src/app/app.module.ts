@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CrudoprComponent } from './crudopr/crudopr.component';
 import { FormsModule } from '@angular/forms';
+import { AddtodoComponent } from './addtodo/addtodo.component';
+import { DisplaytodoComponent } from './displaytodo/displaytodo.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CrudoprComponent
+    AddtodoComponent,
+    DisplaytodoComponent,
   ],
   imports: [
     BrowserModule,

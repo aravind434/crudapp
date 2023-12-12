@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CrudoprComponent } from './crudopr.component';
+import { AddtodoComponent } from './addtodo.component';
 
-describe('CrudoprComponent', () => {
-  let component: CrudoprComponent;
-  let fixture: ComponentFixture<CrudoprComponent>;
+describe('AddtodoComponent', () => {
+  let component: AddtodoComponent;
+  let fixture: ComponentFixture<AddtodoComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CrudoprComponent]
+      declarations: [AddtodoComponent]
     });
-    fixture = TestBed.createComponent(CrudoprComponent);
+    fixture = TestBed.createComponent(AddtodoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

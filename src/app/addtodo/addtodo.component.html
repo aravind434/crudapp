@@ -1,0 +1,5 @@
+<div class="d-flex ">
+    <input type="text" [(ngModel)] = "todoname">
+    <button type="button" class="btn btn-primary m-1" (click)="addToDo()">Add Todo</button>   
+</div>
+<app-displaytodo *ngFor="let obj of todoList; let i = index" [todofromparent]="obj" [index] = "i" (delEvent)="delTask($event)" (doneEvent)="DoneTask($event)" (undoEvent)="UndoTask($event)"></app-displaytodo>

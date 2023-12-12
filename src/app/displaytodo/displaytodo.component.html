@@ -1,0 +1,6 @@
+<div class="d-flex gap-2 m-2">
+    <span [ngClass]="todofromparent.status ?'text-strike' : ''">{{todofromparent.todoName}}</span>
+    <button class="btn btn-secondary" (click)="Done()" *ngIf="!todofromparent.status">Done</button>
+    <button class="btn btn-warning" (click)="Undo()" *ngIf="todofromparent.status">Undo</button>
+    <button class="btn" (click)="del()" [disabled]="!todofromparent.status"  [ngClass]="todofromparent.status ?'btn-danger' : 'btn-outline-secondary'">delete</button>
+</div>
