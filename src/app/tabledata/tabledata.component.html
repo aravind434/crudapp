@@ -1,0 +1,15 @@
+<p>tabledata works!</p>
+<table border="1">
+    <tr>
+        <thead>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>PhoneNumber</th>
+            <th>Email</th>
+        </thead>
+    </tr>
+    <tr *ngFor="let student in StudentData; let i = index">
+        <td>{{student.fname}}</td>
+    </tr>
+
+</table>
